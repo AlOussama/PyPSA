@@ -6,6 +6,8 @@ import cartopy.crs as ccrs
 import pandas as pd
 from pypsa.networkclustering import get_clustering_from_busmap, busmap_by_kmeans
 
+# Quelle: https://pypsa.readthedocs.io/en/latest/examples/spatial-clustering.html
+
 n = pypsa.examples.scigrid_de()
 n.lines["type"] = np.nan # delete the 'type' specifications to make this example easier
 
